@@ -1,0 +1,23 @@
+#+TITLE: mastonon.social layer
+
+* Table of Contents                                        :TOC_4_gh:noexport:
+ - [[#description][Description]]
+ - [[#install][Install]]
+ - [[#keybindings][Keybindings]]
+
+* Description
+This layer adds the ability to connect to a Mastodon Social Instance. It uses
+ https://github.com/jdenen/mastodon.el to do this
+
+* Install
+To use this configuration layer, add it to your =~/.spacemacs=. You will need to
+add =mastodon= to the existing =dotspacemacs-configuration-layers= list in this
+file.
+
+On the first invocation, you will be prompted for the instance, username, and 
+password for connecting to mastodon.
+
+* Keybindings
+SPC-a-m-r Set up your mastodon connection (mastodon-register) 
+SPC-a-m-m Load Mastodon buffer with your timeline (mastodon)
+SPC-a-m-t Post a new toot to your Mastodon account (mastodon-toot)
